@@ -9,27 +9,29 @@
         <from-view-id>*</from-view-id>
         <navigation-case>
             <from-outcome>goToHello2</from-outcome>
-            <to-view-id>/hello.xhtml</to-view-id>
+            <to-view-id>/hello2.xhtml</to-view-id>
         </navigation-case>
         <navigation-case>
             <from-outcome>goToProfile</from-outcome>
             <to-view-id>/Profile.xhtml</to-view-id>
+            <redirect/>
         </navigation-case>
         <navigation-case>
             <from-outcome>goToPictures</from-outcome>
-            <to-view-id>/Pictures</to-view-id>
+            <to-view-id>/Pictures.xhtml</to-view-id>
         </navigation-case>
         <navigation-case>
             <from-outcome>goToHistory</from-outcome>
-            <to-view-id>/History</to-view-id>
+            <to-view-id>/History.xhtml</to-view-id>
         </navigation-case>
         <navigation-case>
             <from-outcome>goToAbout</from-outcome>
-            <to-view-id>/About</to-view-id>
+            <to-view-id>/About.xhtml</to-view-id>
         </navigation-case>
         <navigation-case>
             <from-outcome>goToMain</from-outcome>
-            <to-view-id>/Main</to-view-id>
+            <to-view-id>/newmain.xhtml</to-view-id>
+            <redirect/>
         </navigation-case>
     </navigation-rule>
 

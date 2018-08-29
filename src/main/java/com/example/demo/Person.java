@@ -1,8 +1,13 @@
 package com.example.demo;
 
+import javax.inject.Named;
+
+@Named
 public class Person {
-    private String fName;
-    private String lName;
+    private int count;
+    private String fName = "Serega";
+    private String lName = "Vozup";
+    private int age = 10;
 
     public String getfName() {
         return fName;
@@ -18,5 +23,21 @@ public class Person {
 
     public void setlName(String lName) {
         this.lName = lName;
+    }
+
+    public int getCount() {
+        return count++;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }

@@ -9,11 +9,11 @@
         <from-view-id>*</from-view-id>
         <navigation-case>
             <from-outcome>goToHello2</from-outcome>
-            <to-view-id>/hello2</to-view-id>
+            <to-view-id>/hello.xhtml</to-view-id>
         </navigation-case>
         <navigation-case>
             <from-outcome>goToProfile</from-outcome>
-            <to-view-id>/Profile</to-view-id>
+            <to-view-id>/Profile.xhtml</to-view-id>
         </navigation-case>
         <navigation-case>
             <from-outcome>goToPictures</from-outcome>

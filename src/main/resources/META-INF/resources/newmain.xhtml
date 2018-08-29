@@ -12,7 +12,7 @@
 </h:head>
 
 <h:body>
-    <p:layout fullPage="true">
+    <p:layout fullPage="false">
         <p:layoutUnit position="center" resizable="false" collapsible="false" closable="false">
             <h:panelGrid columns="4" cellpadding="10" cellspacing="20">
                 <p:button outcome="goToPictures" value="Pictures"/>
@@ -20,13 +20,35 @@
                 <p:link value="History" outcome="goToHistory" />
                 <p:link value="About" outcome="goToAbout" />
             </h:panelGrid>
+            <p:spacer/>
+
+            <h:form>
+                <h:panelGrid columns="2">
+                    <p:outputLabel value="Login"/>
+                    <p:inputText value="#{person.login}"/>
+
+                    <p:outputLabel value="Password"/>
+                    <p:inputText value="#{person.password}"/>
+
+                    <p:commandButton value="Login" ajax="false" action="#{person.checkPassword}"/>
+                </h:panelGrid>
+            </h:form>
         </p:layoutUnit>
         <p:layoutUnit position="east" resizable="true" collapsible="false" closable="false">
-            <h:panelGrid columns="1" cellpadding="2" cellspacing="2">
-                <h:outputText value="#{person.fName}"/>
-                <h:outputText value="#{person.lName}"/>
-                <h:outputText value="#{person.age}"/>
-            </h:panelGrid>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <p:outputLabel value="First Name"/>
+                    <p:inputText value="#{person.fName}"/>
+
+                    <p:outputLabel value="Last Name"/>
+                    <p:inputText value="#{person.lName}"/>
+
+                    <p:outputLabel value="Person Age"/>
+                    <p:inputText value="#{person.age}"/>
+
+                    <p:commandButton value="Submit" ajax="false" action="goToAbout"/>
+                </h:panelGrid>
+            </h:form>
         </p:layoutUnit>
     </p:layout>
 

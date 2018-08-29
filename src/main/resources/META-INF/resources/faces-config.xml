@@ -33,6 +33,11 @@
             <to-view-id>/newmain.xhtml</to-view-id>
             <redirect/>
         </navigation-case>
+        <navigation-case>
+            <from-outcome>goToInvalidPassword</from-outcome>
+            <to-view-id>/invalid_password.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
     </navigation-rule>
 
 </faces-config>

@@ -11,15 +11,18 @@
     <title>Test page</title>
 </h:head>
     <h:form>
-        <p:outputLabel value="First Name"/>
-        <p:inputText value="#{person.fName}"/>
-        <br/>
-        <p:outputLabel value="Last Name"/>
-        <p:inputText value="#{person.lName}"/>
-        <br/>
-        <p:outputLabel value="Person Age"/>
-        <p:inputText value="#{person.age}"/>
-        <p:commandButton value="Submit" ajax="false" action="goToMain"/>
+        <h:panelGrid columns="2">
+            <p:outputLabel value="First Name"/>
+            <p:inputText value="#{person.fName}"/>
+
+            <p:outputLabel value="Last Name"/>
+            <p:inputText value="#{person.lName}"/>
+
+            <p:outputLabel value="Person Age"/>
+            <p:inputText value="#{person.age}"/>
+
+            <p:commandButton value="Submit" ajax="false" action="goToMain"/>
+        </h:panelGrid>
     </h:form>
     <br/>
 
